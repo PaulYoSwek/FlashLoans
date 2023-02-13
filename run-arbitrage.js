@@ -7,6 +7,7 @@ const {mainnet: addresses } = require('./addresses');
 const web3 = new Web3(
     new Web3.providers.WebsocketProvider(process.env.INFURA_URL)
 );
+web3.eth.accounts.wallet.add(process.env.INFURA_URL);
 
 const kyber = new web3.eth.Contract(
     abis.kyber.kyberNetworkProxy,
