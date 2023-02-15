@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^4.8.1",
+    "@studydefi/money-legos": "^2.4.2",
+    "@truffle/hdwallet-provider": "^2.1.6",
     "@uniswap/sdk": "^3.0.3",
     "dotenv": "^16.0.3",
+    "solc": "^0.5.7",
     "web3": "^1.8.2"
   }
 }

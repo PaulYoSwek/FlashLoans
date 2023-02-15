@@ -1,4 +1,4 @@
-pragma solidity ^0.8.17;
+pragma solidity ^0.5.7;
 pragma experimental ABIEncoderV2;
 
 import "@studydefi/money-legos/dydx/contracts/DydxFlashloanBase.sol";
@@ -6,8 +6,8 @@ import "@studydefi/money-legos/dydx/contracts/ICallee.sol";
 import { KyberNetworkProxy as IKyberNetworkProxy } from '@studydefi/money-legos/kyber/contracts/KyberNetworkProxy.sol';
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./IUniswapV2Router02";
-import "./IWeth";
+import "./IUniswapV2Router02.sol";
+import "./IWeth.sol";
 
 
 contract Flashloan is ICallee, DydxFlashloanBase {
@@ -120,5 +120,5 @@ contract Flashloan is ICallee, DydxFlashloanBase {
         solo.operate(accountInfos, operations);
     }
 
-    function() external payable {}
+    //function() external payable {}
 }
